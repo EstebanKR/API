@@ -9,11 +9,13 @@ import Pokemon from './Componentes/Pokemon'
 import Usuario from './Componentes/Usuario'
 import Menu from './Componentes/Menu'
 import Favoritos from './Componentes/Favoritos'
+import { AppProvider } from './Contexto/Contexto';
 
 function App() {
 
 
   return (
+    <AppProvider>
     <Router>
       <Menu/>
       <Routes>
@@ -26,6 +28,7 @@ function App() {
 
       </Routes>
     </Router>
+    </AppProvider>
   )
 }
 
