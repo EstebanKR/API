@@ -61,7 +61,7 @@ function App() {
 
           <Route path="/favoritos" element={usuario ? <Favoritos /> :
             <Navigate to="/login" />} />
-          <Route path="/detalle/:name" element={usuario ? <Pokemon /> :
+          <Route path="/Pokemon/:name" element={usuario ? <Pokemon /> :
             <Navigate to="/login" />} />
           <Route path="/login" element={<Login />} /> 
           <Route path="/registro" element={<Registro />} /> 
