@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
 import { supabase } from "../../supabase";
+import "./styles.css";
+
 
 export default function Usuario() {
   const [usuario, setUsuario] = useState(null);
@@ -91,7 +93,7 @@ export default function Usuario() {
   if (!usuario) return <p>Cargando...</p>;
 
   return (
-    <div>
+    <div className="usuario-container">
       <h2>Perfil de Usuario</h2>
       <label>Nombre:
         <input name="nombre" value={form.nombre} onChange={handleChange} />
